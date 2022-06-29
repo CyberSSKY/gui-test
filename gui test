@@ -1,0 +1,536 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICornermain = Instance.new("UICorner")
+local shopbutton = Instance.new("TextButton")
+local teleport = Instance.new("TextButton")
+local aboutbutton = Instance.new("TextButton")
+local AutoFarm = Instance.new("TextButton")
+local shopframe = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local autoyellow = Instance.new("TextButton")
+local autoblue = Instance.new("TextButton")
+local autogreen = Instance.new("TextButton")
+local autored = Instance.new("TextButton")
+local elderkai = Instance.new("TextButton")
+local mainbutton = Instance.new("TextButton")
+local mainframe = Instance.new("Frame")
+local UICornermainframe = Instance.new("UICorner")
+local DraonCrash = Instance.new("TextButton")
+local DragonThrow = Instance.new("TextButton")
+local Rejoin = Instance.new("TextButton")
+local NoSlow = Instance.new("TextButton")
+local SKYhubBeta = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local AntiForceFieldbutton = Instance.new("TextButton")
+local aboutframe = Instance.new("Frame")
+local crediting = Instance.new("TextLabel")
+local dicordname = Instance.new("TextLabel")
+local disordLink = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TopBar = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local teleportframe = Instance.new("ScrollingFrame")
+local TeleportEarth = Instance.new("TextButton")
+local TeleportNamek = Instance.new("TextButton")
+local TeleportSecretWorld = Instance.new("TextButton")
+local TeleportQueue = Instance.new("TextButton")
+local TeleportFuture = Instance.new("TextButton")
+local TeleportSpace = Instance.new("TextButton")
+local TeleportHTC = Instance.new("TextButton")
+local TeleportZaros = Instance.new("TextButton")
+local TeleportOtherWorld = Instance.new("TextButton")
+local TeleportBySky = Instance.new("TextLabel")
+local MainA = Instance.new("TextLabel")
+local OpenClose = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+main.BorderColor3 = Color3.fromRGB(10, 18, 16)
+main.Position = UDim2.new(0.0382729247, 0, 0.101123624, 0)
+main.Size = UDim2.new(0, 513, 0, 345)
+
+UICornermain.CornerRadius = UDim.new(0.100000001, 1)
+UICornermain.Name = "UICornermain"
+UICornermain.Parent = main
+
+shopbutton.Name = "shopbutton"
+shopbutton.Parent = main
+shopbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shopbutton.Position = UDim2.new(0.0175439119, 0, 0.266666651, 0)
+shopbutton.Size = UDim2.new(0, 84, 0, 20)
+shopbutton.Font = Enum.Font.SourceSans
+shopbutton.Text = "Buy"
+shopbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+shopbutton.TextSize = 14.000
+
+teleport.Name = "teleport"
+teleport.Parent = main
+teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+teleport.Position = UDim2.new(0.0175439119, 0, 0.353623182, 0)
+teleport.Size = UDim2.new(0, 84, 0, 20)
+teleport.Font = Enum.Font.SourceSans
+teleport.Text = "Teleport"
+teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+teleport.TextSize = 14.000
+
+aboutbutton.Name = "aboutbutton"
+aboutbutton.Parent = main
+aboutbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aboutbutton.Position = UDim2.new(0.0155945718, 0, 0.530434787, 0)
+aboutbutton.Size = UDim2.new(0, 84, 0, 20)
+aboutbutton.Font = Enum.Font.SourceSans
+aboutbutton.Text = "About"
+aboutbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+aboutbutton.TextSize = 14.000
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = main
+AutoFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.Position = UDim2.new(0.0175438747, 0, 0.440579683, 0)
+AutoFarm.Size = UDim2.new(0, 84, 0, 20)
+AutoFarm.Font = Enum.Font.SourceSans
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarm.TextSize = 14.000
+
+shopframe.Name = "shopframe"
+shopframe.Parent = main
+shopframe.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+shopframe.BorderColor3 = Color3.fromRGB(27, 42, 53)
+shopframe.Position = UDim2.new(0.214424849, 0, 0.153623238, 0)
+shopframe.Size = UDim2.new(0, 373, 0, 279)
+shopframe.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 0)
+UICorner.Parent = shopframe
+
+autoyellow.Name = "autoyellow"
+autoyellow.Parent = shopframe
+autoyellow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autoyellow.Position = UDim2.new(0.0998750925, 0, 0.547296226, 0)
+autoyellow.Size = UDim2.new(0, 132, 0, 30)
+autoyellow.Font = Enum.Font.SourceSans
+autoyellow.Text = "AUTO Buy 80 Yellow"
+autoyellow.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoyellow.TextSize = 14.000
+
+autoblue.Name = "autoblue"
+autoblue.Parent = shopframe
+autoblue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autoblue.Position = UDim2.new(0.48446548, 0, 0.179508984, 0)
+autoblue.Size = UDim2.new(0, 135, 0, 30)
+autoblue.Font = Enum.Font.SourceSans
+autoblue.Text = "AUTO Buy 80 Blue"
+autoblue.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoblue.TextSize = 14.000
+
+autogreen.Name = "autogreen"
+autogreen.Parent = shopframe
+autogreen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autogreen.Position = UDim2.new(0.490224689, 0, 0.547888398, 0)
+autogreen.Size = UDim2.new(0, 132, 0, 30)
+autogreen.Font = Enum.Font.SourceSans
+autogreen.Text = "AUTO Buy 80 Green"
+autogreen.TextColor3 = Color3.fromRGB(0, 0, 0)
+autogreen.TextSize = 14.000
+
+autored.Name = "autored"
+autored.Parent = shopframe
+autored.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autored.Position = UDim2.new(0.101458594, 0, 0.182795584, 0)
+autored.Size = UDim2.new(0, 132, 0, 30)
+autored.Font = Enum.Font.SourceSans
+autored.Text = "AUTO Buy 80 Red"
+autored.TextColor3 = Color3.fromRGB(0, 0, 0)
+autored.TextSize = 14.000
+
+elderkai.Name = "elderkai"
+elderkai.Parent = shopframe
+elderkai.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+elderkai.Position = UDim2.new(0.292225212, 0, 0.727598548, 0)
+elderkai.Size = UDim2.new(0, 163, 0, 34)
+elderkai.Font = Enum.Font.SourceSans
+elderkai.Text = "Elder kai"
+elderkai.TextColor3 = Color3.fromRGB(0, 0, 0)
+elderkai.TextSize = 14.000
+
+mainbutton.Name = "mainbutton"
+mainbutton.Parent = main
+mainbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainbutton.Position = UDim2.new(0.0158714429, 0, 0.184855878, 0)
+mainbutton.Size = UDim2.new(0, 84, 0, 20)
+mainbutton.Font = Enum.Font.SourceSans
+mainbutton.Text = "Main"
+mainbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+mainbutton.TextSize = 14.000
+
+mainframe.Name = "mainframe"
+mainframe.Parent = main
+mainframe.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+mainframe.Position = UDim2.new(0.235867381, 0, 0.156521782, 0)
+mainframe.Size = UDim2.new(0, 373, 0, 277)
+
+UICornermainframe.CornerRadius = UDim.new(0, 0)
+UICornermainframe.Name = "UICornermainframe"
+UICornermainframe.Parent = mainframe
+
+DraonCrash.Name = "DraonCrash"
+DraonCrash.Parent = mainframe
+DraonCrash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DraonCrash.Position = UDim2.new(0.270777464, 0, 0.259927779, 0)
+DraonCrash.Size = UDim2.new(0, 170, 0, 29)
+DraonCrash.Font = Enum.Font.SourceSans
+DraonCrash.Text = "Active Dragon Crash"
+DraonCrash.TextColor3 = Color3.fromRGB(0, 0, 0)
+DraonCrash.TextSize = 14.000
+
+DragonThrow.Name = "DragonThrow"
+DragonThrow.Parent = mainframe
+DragonThrow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DragonThrow.Position = UDim2.new(0.270777494, 0, 0.425992757, 0)
+DragonThrow.Size = UDim2.new(0, 170, 0, 29)
+DragonThrow.Font = Enum.Font.SourceSans
+DragonThrow.Text = "Active Dragon Throw "
+DragonThrow.TextColor3 = Color3.fromRGB(0, 0, 0)
+DragonThrow.TextSize = 14.000
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = mainframe
+Rejoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rejoin.Position = UDim2.new(0.270777494, 0, 0.866425991, 0)
+Rejoin.Size = UDim2.new(0, 170, 0, 29)
+Rejoin.Font = Enum.Font.SourceSans
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.TextSize = 14.000
+
+NoSlow.Name = "NoSlow"
+NoSlow.Parent = mainframe
+NoSlow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoSlow.Position = UDim2.new(0.270777464, 0, 0.570397079, 0)
+NoSlow.Size = UDim2.new(0, 170, 0, 29)
+NoSlow.Font = Enum.Font.SourceSans
+NoSlow.Text = "Active No-Slow"
+NoSlow.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoSlow.TextSize = 14.000
+
+SKYhubBeta.Name = "SKYhubBeta"
+SKYhubBeta.Parent = mainframe
+SKYhubBeta.BackgroundColor3 = Color3.fromRGB(170, 42, 10)
+SKYhubBeta.Position = UDim2.new(0.230563015, 0, 0.0180505421, 0)
+SKYhubBeta.Size = UDim2.new(0, 200, 0, 50)
+SKYhubBeta.Font = Enum.Font.SourceSans
+SKYhubBeta.Text = "SKY hub V1.1 (beta)"
+SKYhubBeta.TextColor3 = Color3.fromRGB(0, 0, 0)
+SKYhubBeta.TextScaled = true
+SKYhubBeta.TextSize = 14.000
+SKYhubBeta.TextWrapped = true
+
+UICorner_2.Parent = SKYhubBeta
+
+AntiForceFieldbutton.Name = "AntiForceFieldbutton"
+AntiForceFieldbutton.Parent = mainframe
+AntiForceFieldbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiForceFieldbutton.Position = UDim2.new(0.270777464, 0, 0.718411505, 0)
+AntiForceFieldbutton.Size = UDim2.new(0, 170, 0, 29)
+AntiForceFieldbutton.Font = Enum.Font.SourceSans
+AntiForceFieldbutton.Text = "Anti Force Field"
+AntiForceFieldbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiForceFieldbutton.TextSize = 14.000
+
+aboutframe.Name = "aboutframe"
+aboutframe.Parent = main
+aboutframe.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+aboutframe.BorderColor3 = Color3.fromRGB(27, 42, 53)
+aboutframe.Position = UDim2.new(0.228557527, 0, 0.136202917, 0)
+aboutframe.Size = UDim2.new(0, 373, 0, 284)
+aboutframe.Visible = false
+
+crediting.Name = "crediting"
+crediting.Parent = aboutframe
+crediting.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+crediting.Position = UDim2.new(0.155934989, 0, 0.228797525, 0)
+crediting.Size = UDim2.new(0, 285, 0, 50)
+crediting.Font = Enum.Font.SourceSans
+crediting.Text = "SKY Hub BY SKY"
+crediting.TextColor3 = Color3.fromRGB(59, 35, 239)
+crediting.TextScaled = true
+crediting.TextSize = 14.000
+crediting.TextWrapped = true
+
+dicordname.Name = "dicordname"
+dicordname.Parent = aboutframe
+dicordname.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+dicordname.Position = UDim2.new(0.231744081, 0, 0.438790739, 0)
+dicordname.Size = UDim2.new(0, 200, 0, 50)
+dicordname.Font = Enum.Font.SourceSans
+dicordname.Text = "ITzNotSky#1428"
+dicordname.TextColor3 = Color3.fromRGB(90, 101, 255)
+dicordname.TextScaled = true
+dicordname.TextSize = 1.000
+dicordname.TextWrapped = true
+
+disordLink.Name = "disordLink"
+disordLink.Parent = aboutframe
+disordLink.BackgroundColor3 = Color3.fromRGB(54, 56, 54)
+disordLink.Position = UDim2.new(0.308659732, 0, 0.682598472, 0)
+disordLink.Size = UDim2.new(0, 142, 0, 25)
+disordLink.Font = Enum.Font.SourceSans
+disordLink.Text = "Discord Server"
+disordLink.TextColor3 = Color3.fromRGB(92, 23, 171)
+disordLink.TextSize = 14.000
+
+UICorner_3.Parent = disordLink
+
+TopBar.Name = "TopBar"
+TopBar.Parent = main
+TopBar.BackgroundColor3 = Color3.fromRGB(209, 53, 26)
+TopBar.BorderColor3 = Color3.fromRGB(42, 52, 28)
+TopBar.Position = UDim2.new(0.000779770315, 0, -0.00193079561, 0)
+TopBar.Size = UDim2.new(0, 513, 0, 50)
+TopBar.Font = Enum.Font.SourceSansSemibold
+TopBar.Text = "SKY hub"
+TopBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.TextScaled = true
+TopBar.TextSize = 10.000
+TopBar.TextStrokeColor3 = Color3.fromRGB(67, 179, 185)
+TopBar.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_4.Parent = TopBar
+
+teleportframe.Name = "teleportframe"
+teleportframe.Parent = main
+teleportframe.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+teleportframe.Position = UDim2.new(0.233918071, 0, 0.1652174, 0)
+teleportframe.Size = UDim2.new(0, 373, 0, 277)
+teleportframe.Visible = false
+teleportframe.CanvasSize = UDim2.new(0, 0, 1, 0)
+
+TeleportEarth.Name = "TeleportEarth"
+TeleportEarth.Parent = teleportframe
+TeleportEarth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportEarth.Position = UDim2.new(0.0988460332, 0, 0.194513455, 0)
+TeleportEarth.Size = UDim2.new(0, 103, 0, 29)
+TeleportEarth.Font = Enum.Font.SourceSans
+TeleportEarth.Text = "Earth"
+TeleportEarth.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportEarth.TextSize = 14.000
+
+TeleportNamek.Name = "TeleportNamek"
+TeleportNamek.Parent = teleportframe
+TeleportNamek.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportNamek.Position = UDim2.new(0.563009918, 0, 0.19451344, 0)
+TeleportNamek.Size = UDim2.new(0, 103, 0, 29)
+TeleportNamek.Font = Enum.Font.SourceSans
+TeleportNamek.Text = "Namek"
+TeleportNamek.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportNamek.TextSize = 14.000
+
+TeleportSecretWorld.Name = "TeleportSecretWorld"
+TeleportSecretWorld.Parent = teleportframe
+TeleportSecretWorld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportSecretWorld.Position = UDim2.new(0.0988460481, 0, 0.501759887, 0)
+TeleportSecretWorld.Size = UDim2.new(0, 103, 0, 29)
+TeleportSecretWorld.Font = Enum.Font.SourceSans
+TeleportSecretWorld.Text = "Secret World"
+TeleportSecretWorld.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportSecretWorld.TextSize = 14.000
+
+TeleportQueue.Name = "TeleportQueue"
+TeleportQueue.Parent = teleportframe
+TeleportQueue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportQueue.Position = UDim2.new(0.563009918, 0, 0.501759827, 0)
+TeleportQueue.Size = UDim2.new(0, 103, 0, 29)
+TeleportQueue.Font = Enum.Font.SourceSans
+TeleportQueue.Text = "Queue"
+TeleportQueue.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportQueue.TextSize = 14.000
+
+
+TeleportFuture.Name = "TeleportFuture"
+TeleportFuture.Parent = teleportframe
+TeleportFuture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportFuture.Position = UDim2.new(0.563009918, 0, 0.339441001, 0)
+TeleportFuture.Size = UDim2.new(0, 103, 0, 29)
+TeleportFuture.Font = Enum.Font.SourceSans
+TeleportFuture.Text = "Futue"
+TeleportFuture.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportFuture.TextSize = 14.000
+
+TeleportSpace.Name = "TeleportSpace"
+TeleportSpace.Parent = teleportframe
+TeleportSpace.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportSpace.Position = UDim2.new(0.0988460332, 0, 0.339441001, 0)
+TeleportSpace.Size = UDim2.new(0, 103, 0, 29)
+TeleportSpace.Font = Enum.Font.SourceSans
+TeleportSpace.Text = "Space"
+TeleportSpace.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportSpace.TextSize = 14.000
+
+TeleportHTC.Name = "TeleportHTC"
+TeleportHTC.Parent = teleportframe
+TeleportHTC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportHTC.Position = UDim2.new(0.323843151, 0, 0.837991774, 0)
+TeleportHTC.Size = UDim2.new(0, 103, 0, 29)
+TeleportHTC.Font = Enum.Font.SourceSans
+TeleportHTC.Text = "HTC"
+TeleportHTC.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportHTC.TextSize = 14.000
+
+TeleportZaros.Name = "TeleportZaros"
+TeleportZaros.Parent = teleportframe
+TeleportZaros.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportZaros.Position = UDim2.new(0.0988460332, 0, 0.652484477, 0)
+TeleportZaros.Size = UDim2.new(0, 103, 0, 29)
+TeleportZaros.Font = Enum.Font.SourceSans
+TeleportZaros.Text = "Zaros"
+TeleportZaros.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportZaros.TextSize = 14.000
+
+TeleportOtherWorld.Name = "TeleportOtherWorld"
+TeleportOtherWorld.Parent = teleportframe
+TeleportOtherWorld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportOtherWorld.Position = UDim2.new(0.563009918, 0, 0.65103519, 0)
+TeleportOtherWorld.Size = UDim2.new(0, 103, 0, 29)
+TeleportOtherWorld.Font = Enum.Font.SourceSans
+TeleportOtherWorld.Text = "Other World"
+TeleportOtherWorld.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportOtherWorld.TextSize = 14.000
+
+TeleportBySky.Name = "TeleportBySky"
+TeleportBySky.Parent = teleportframe
+TeleportBySky.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+TeleportBySky.Position = UDim2.new(0.193029493, 0, 0.0173913036, 0)
+TeleportBySky.Size = UDim2.new(0, 200, 0, 50)
+TeleportBySky.Font = Enum.Font.SourceSans
+TeleportBySky.Text = "Teleport By SKY"
+TeleportBySky.TextColor3 = Color3.fromRGB(59, 25, 255)
+TeleportBySky.TextScaled = true
+TeleportBySky.TextSize = 14.000
+TeleportBySky.TextWrapped = true
+
+MainA.Name = "MainA"
+MainA.Parent = main
+MainA.BackgroundColor3 = Color3.fromRGB(255, 8, 8)
+MainA.Position = UDim2.new(0.206627682, 0, 0.176811576, 0)
+MainA.Size = UDim2.new(0, 4, 0, 264)
+MainA.Font = Enum.Font.SourceSans
+MainA.Text = ""
+MainA.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainA.TextSize = 14.000
+
+OpenClose.Name = "OpenClose"
+OpenClose.Parent = ScreenGui
+OpenClose.BackgroundColor3 = Color3.fromRGB(23, 226, 20)
+OpenClose.Position = UDim2.new(0.931679845, 0, 0.280436575, 0)
+OpenClose.Size = UDim2.new(0, 84, 0, 46)
+OpenClose.Font = Enum.Font.SourceSans
+OpenClose.Text = "Open/Close"
+OpenClose.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenClose.TextSize = 14.000
+
+-- Scripts:
+
+local function VTILC_fake_script() -- shopbutton.LocalScript 
+	local script = Instance.new('LocalScript', shopbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.mainframe.Visible = false
+		script.Parent.Parent.shopframe.Visible = true
+		script.Parent.Parent.teleportframe.Visible = false
+		script.Parent.Parent.aboutframe.Visible = false
+	end)
+end
+coroutine.wrap(VTILC_fake_script)()
+local function RXPJVTR_fake_script() -- teleport.LocalScript 
+	local script = Instance.new('LocalScript', teleport)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.mainframe.Visible = false
+		script.Parent.Parent.shopframe.Visible = false
+		script.Parent.Parent.teleportframe.Visible = true
+		script.Parent.Parent.aboutframe.Visible = false
+	end)
+end
+coroutine.wrap(RXPJVTR_fake_script)()
+local function YGHMQG_fake_script() -- aboutbutton.LocalScript 
+	local script = Instance.new('LocalScript', aboutbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.mainframe.Visible = false
+		script.Parent.Parent.shopframe.Visible = false
+		script.Parent.Parent.teleportframe.Visible = false
+		script.Parent.Parent.aboutframe.Visible = true
+	end)
+end
+coroutine.wrap(YGHMQG_fake_script)()
+local function YFWB_fake_script() -- mainbutton.LocalScript 
+	local script = Instance.new('LocalScript', mainbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.mainframe.Visible = true
+		script.Parent.Parent.shopframe.Visible = false
+		script.Parent.Parent.teleportframe.Visible = false
+		script.Parent.Parent.aboutframe.Visible = false
+	end)
+end
+coroutine.wrap(YFWB_fake_script)()
+local function ZWRTN_fake_script() -- main.draggablescript 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService('UserInputService')
+	local main = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(main, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	main.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = main.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(ZWRTN_fake_script)()
+local function WNWVBXZ_fake_script() -- OpenClose.LocalScript 
+	local script = Instance.new('LocalScript', OpenClose)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.main.Visible = not script.Parent.Parent.main.Visible
+	end)
+end
+coroutine.wrap(WNWVBXZ_fake_script)()
